@@ -1,0 +1,256 @@
+/* Add CSS stylesheet */
+/* Add a black background color to the top navigation */
+/* Add CSS stylesheet */
+.banner{
+    display: flex;
+    border:1px solid black;
+    background-color: darkgray;
+}
+
+.banner p.active {
+    background-color: #0281E8;
+  }
+#Q{   
+    margin: auto;
+    font-size:x-large;
+    text-align: center;
+    width: 10%;
+    padding:24px;
+    line-height: 24px;
+}
+#T{
+    margin: auto;
+    font-size: x-large;
+    text-align:center;
+    width: 10%;
+    padding: 24px;
+    line-height: 24px;
+}
+#FSO{
+    font-weight:bolder;
+    font-size:40px;
+    line-height: 40px;
+    text-align: center;
+    width: 45%;
+}
+#S{
+    margin: auto;
+    font-size: large;
+    text-align: left;
+    width: 35%;
+}
+#SText{
+    font-size: x-large;
+}
+#QBox:hover, #Q:hover, #T:hover, #TBox:hover {background: dimgray!important}
+
+table{
+    width: 100%;
+    column-count: 3;
+}
+#Heading1{   
+    border: 1px, solid black;
+    font-size: x-large;
+    text-align: center;
+    width: 20%;
+}
+#AllQ{
+    font-size: x-large;
+    text-align:center;
+    width: 60%;
+}
+#QButton{
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: x-large;
+    background-color: #165A92;
+    text-align: center; 
+    color: white;
+}
+#SubmitQuestionButton{
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: x-large;
+    background-color: #165A92;
+    text-align: center; 
+    color: white;  
+}
+#col1{
+    font-size: x-large;
+}
+#c3{
+    font-size: x-large;
+    color:rgb(48, 127, 173);
+}
+#c3:hover{
+    color:rgb(27, 80, 133);
+}
+.c4{
+    border: 1px solid black;
+    background-color: dimgray;    
+    color: white;
+    padding:4px;
+    border-radius: 7px;
+    font-size:small;
+}
+#c5{
+    color: grey;
+}
+#c6{
+    color: grey;
+}
+#c7{
+    color: grey;
+}
+
+#col3{
+    padding-right: 6%;
+    text-align: right;
+    font-size:small;
+}
+#User{
+    color: blue;
+}
+#Date{
+    color: green;
+}
+#Time{
+    color: cyan;
+}
+h1{
+    font-weight:light;
+    font-size: 25px;
+}
+h2{
+    font-size: small;
+
+}
+#ErrorMsgBox{
+    text-align: center;
+    color: red;
+    font-size: small;
+}
+#ErrorMsgBox1{
+    text-align: center;
+    color: red;
+    font-size: small;
+}
+#QuestionTitleText{
+    overflow-wrap: break-word;
+    width:85%;
+    padding:40px 20px;
+    
+}
+#QuestionTextInput{
+    overflow-wrap: break-word;
+    width:85%;
+    padding:70px 20px;
+    
+}
+
+#TagsTextInput{
+    overflow-wrap: break-word;
+    width:85%;
+    padding:40px 20px;
+    
+}
+#UsernameTextInput{
+    overflow-wrap: break-word;
+    width:85%;
+    padding:10px 20px;
+}
+input::placeholder {
+    font-size: 12px;
+    font-style: italic;
+}
+#AnswerPageHeading{
+    display: flex;
+    width:100%;
+}
+#column1{
+    font-style: bold;
+    width: 25%;
+}
+#titleOfQuestion{
+    font-style: bold;
+    width: 50%;
+}
+#QButtonFormat{
+    width: 25%;
+}
+#column1{
+    font-size: x-large;
+    font-style: large;
+}
+#titleOfQuestion{
+    text-align: center;
+    font-size: x-large;
+    font-style: large;
+}
+#AButton{
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: x-large;
+    background-color: #165A92;
+    text-align: center; 
+    color: white;
+}
+#SubmitAnswer{
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: x-large;
+    background-color: #165A92;
+    text-align: center; 
+    color: white;
+}
+#column3{
+    padding-right: 6%;
+    text-align: right;
+    font-size:small;
+    
+}
+#colum3{
+    padding-right: 6%;
+    text-align: right;
+    font-size:small;  
+}
+#NumViews{
+    font-size: larger;
+    font-style: bold;
+}
+#NumOfViews{
+    font-size: larger;
+    font-style: bold;
+}
+#User1{
+    color: blue;
+}
+#Date1{
+    color: green;
+}
+#Time1{
+    color: cyan;
+}
+#User2{
+    color: blue;
+}
+#Date2{
+    color: green;
+}
+#Time2{
+    color: cyan;
+}
+#AnswerTextInput{
+    overflow-wrap: break-word;
+    width:85%;
+    padding:200px 30px;
+}
+#UsernameTextInput1{
+    overflow-wrap: break-word;
+    width:85%;
+    padding:10px 20px;
+}

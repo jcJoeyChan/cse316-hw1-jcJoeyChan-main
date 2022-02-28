@@ -1,0 +1,164 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/index.css">
+  <script type="module" src="src/index.js"></script>
+</head>
+
+<body>
+  <div id="banner" class="banner">
+    <div id="Q" class="QBox">
+      <p> Questions </p>
+    </div>
+    <div id="T" class="TBox">
+      <p> Tags </p>
+    </div>
+    <div id="FSO" class="FSOBox">
+      <p> Fake Stack Overflow </p>
+    </div>
+    <div id="S" Class="SBox">
+      <input id="SText" type="text" placeholder="Search ..." name="SText">
+    </div>
+  </div>
+
+  <div id="main" class="main">
+    <table>
+      <colgroup>
+        <col>
+        <col style="width: 50%">
+        <col style="width: 25%">
+        <col style="width: 25%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th id="Heading1">
+            <span id="NumQ">0</span>
+            <span id="NumOfQ">Questions</span>
+          </th>
+          <th>
+            <span id="AllQ">
+              <p> All Questions </p>
+            </span>
+          </th>
+          <th>
+            <span id="NewQ">
+              <button id="QButton" onclick="myFunction()">Ask a Question</button>
+            </span>
+          </th>
+        </tr>
+      </thead>
+    </table>
+    <br>
+    <table id="TableFormat">
+    </table>
+  </div>
+</body>
+
+<body>
+  <div style="display: none;" id="AskingQuestion" class="AskingQuestion">
+    <div id="ErrorMsgBox" class="ErrorMsgBox" style="display: none"></div>
+    <h1> Question Title </h1>
+    <h2>Title should not be more than 100 characters.</h2>
+    <div id="QuestionTitleBox">
+      <input id="QuestionTitleText" type="text" placeholder="eg) What is NullPointerException and how do I fix it?"
+        maxlength="100">
+    </div>
+    <h1> Question Text </h1>
+    <h2>Add details.</h2>
+    <div id="QuestionTextBox">
+      <input id="QuestionTextInput" type="text"
+        placeholder="eg) What are Null Pointer Exceptions (java.lang.NullPointerException) what causes them? I usually get this problem and I wonder if there are methods to prevent them.">
+    </div>
+    <h1> Tags </h1>
+    <h2>Add Keywords separated by whitespace.</h2>
+    <div id="TagsTextBox">
+      <input id="TagsTextInput" type="text" placeholder="eg) java nullpointerexception">
+    </div>
+    <h1> Username </h1>
+    <h2>Should not be more than 15 characters.</h2>
+    <div id="UsernameTextBox">
+      <input id="UsernameTextInput" type="text" placeholder="HelloKitty123" maxlength="15">
+    </div>
+    <button id="SubmitQuestionButton" onclick="myFunction()">Post Question</button>
+
+  </div>
+</body>
+
+<body>
+  <div style="display: none;" id="AnswerPage" class="AnswerPage">
+    <div id="AnswerPageHeading">
+      <div id="column1">
+        <span id="numForAns">0</span>
+        <span>Answers</span><br>
+      </div>
+      <div id="titleOfQuestion">Title</div>
+      <div id="QButtonFormat"><button id="QButton" onclick>Ask a Question</button></div>
+    </div>
+    <table>
+      <tr class="border-bottom">
+        <td width="25%">
+          <span id="NumViews">0</span>
+          <span id="NumOfViews">Views</span>
+        </td>
+        <td width="50%">
+          <span id="QDescription">text</span>
+        </td>
+        <td id="column3" width="25%">
+          <span id="c5">Asked by </span>
+          <span id="User1"><br></span>
+          <span id="c6">On </span>
+          <span id="Date1"><br></span>
+          <span id="c7">At </span>
+          <span id="Time1"></span>
+          <style>
+            tr.border-bottom td {
+              padding-bottom: 7px;
+              border-bottom: 1pt dotted black;
+            }
+          </style>
+        </td>
+      </tr>
+    </table>
+    <table id="AnswerTable">
+      <!-- <tr id= "rowAnswer" class="border-bottom">
+        <td id=answerToQuestion colspan=2 width="75%"> Row 2 col 1</td>
+        <td id="colum3" width="25%">
+          <span id="c5">Ans by</span>
+          <span id="User2"> <br></span>
+          <span id="c6">On</span>
+          <span id="Date2"><br></span>
+          <span id="c7">At</span>
+          <span id="Time2"></span>
+          <style>
+            tr.border-bottom td {
+              padding-bottom: 7px;
+              border-bottom: 1pt dotted black;
+            }
+          </style>
+        </td>
+      </tr> -->
+    </table>
+    <div id="AButtonFormat">
+      <button id="AButton" onclick>Answer Question</button>
+    </div>
+  </div>
+</body>
+
+<body>
+  <div style="display: none;" id="AnsweringQuestion" class="AnsweringQuestion">
+    <div id="ErrorMsgBox1" class="ErrorMsgBox1" style="display: none"></div>
+    <h1> Answer Text </h1>
+    <div id= "AnswerTextBox">
+      <input id="AnswerTextInput" type="text"
+        placeholder="eg) What are Null Pointer Exceptions (java.lang.NullPointerException) what causes them? I usually get this problem and I wonder if there are methods to prevent them.">
+    </div>
+    <h1> Username </h1>
+    <h2>Should not be more than 15 characters.</h2>
+    <div id="UsernameTextBox">
+      <input id="UsernameTextInput1" type="text" placeholder="HelloKitty123" maxlength="15">
+    </div>
+    <button id="SubmitAnswer" onclick>Post Answer</button>
+  </div>
+</body>
+
+</html>
